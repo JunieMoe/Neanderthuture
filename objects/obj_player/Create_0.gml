@@ -1,4 +1,4 @@
-// Variable for local player id
+// Variable for local player id ooga booga
 player_local_id = 0;
 // Variable for player score
 player_score = 0;
