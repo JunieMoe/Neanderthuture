@@ -3,7 +3,7 @@ player_local_id = 0;
 // Variable for player score
 player_score = 0;
 // Variable for player health
-player_health = 3;
+player_health = 10;
 
 // Variable for player ammo
 player_curr_ammo = 31;

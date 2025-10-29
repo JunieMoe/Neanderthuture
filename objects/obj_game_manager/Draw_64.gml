@@ -17,12 +17,40 @@ if(curr_game_state == GAME_STATE.PLAYING)
 			if (player_health >= 2)
 			{
 				// Draws the second health sprite at full strength
-				draw_sprite_ext(spr_hud_health, 0, 237, 40, 1.0, 1.0, 0, c_white, 1.0);
+				draw_sprite_ext(spr_hud_health, 0, 106, 40, 1.0, 1.0, 0, c_white, 1.0);
 				
-				// Checks the players health is above 2
-				if (player_health >= 3)
+					if (player_health >= 3)
+					{
+						draw_sprite_ext(spr_hud_health, 0, 126, 40, 1.0, 1.0, 0, c_white, 1.0);
+						
+						if (player_health >= 4)
+						{
+							draw_sprite_ext(spr_hud_health, 0, 146, 40, 1.0, 1.0, 0, c_white, 1.0);
+							
+							if (player_health >= 5)
+							{
+								draw_sprite_ext(spr_hud_health, 0, 166, 40, 1.0, 1.0, 0, c_white, 1.0);
+								
+								if (player_health >= 6)
+								{
+									draw_sprite_ext(spr_hud_health, 0, 186, 40, 1.0, 1.0, 0, c_white, 1.0);
+									
+									if (player_health >= 7)
+									{
+										draw_sprite_ext(spr_hud_health, 0, 206, 40, 1.0, 1.0, 0, c_white, 1.0);
+										
+										if (player_health >= 8)
+										{
+											draw_sprite_ext(spr_hud_health, 0, 226, 40, 1.0, 1.0, 0, c_white, 1.0);
+											
+											if (player_health >= 9)
+											{
+												draw_sprite_ext(spr_hud_health, 0, 246, 40, 1.0, 1.0, 0, c_white, 1.0);
+						
+				// Checks the players health is above 9
+				if (player_health >= 10)
 				{
-					// Draws the third health sprite at full strength
+					// Draws the 10th health sprite at full strength
 					draw_sprite_ext(spr_hud_health_end, 0, 385, 40, 1.0, 1.0, 0, c_white, 1.0);
 				}
 				else
@@ -118,6 +146,13 @@ if(curr_game_state == GAME_STATE.PLAYING)
 	
 	// Resets the draw alpha
 	draw_set_alpha(1.0);
+}
+							}
+						}
+					}
+			}
+		}
+	}
 }
 else
 {
