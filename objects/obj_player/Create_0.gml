@@ -3,7 +3,7 @@ player_local_id = 0;
 // Variable for player score
 player_score = 0;
 // Variable for player health
-player_health = 3;
+player_health = 10;
 
 // Variable for player ammo
 player_curr_ammo = 31;
@@ -19,8 +19,6 @@ player_reload_rate = 0.075;
 player_reload_cooldown = 0;
 // Variable for reloading state
 player_is_reloading = false; 
-// Variable for Weapon State - true: ranged, false: melee
-player_is_ranged = true;
 
 // Variable for gamepad deadzone
 controller_deadzone = 0.1;
@@ -122,14 +120,16 @@ create_projectile = function(_gun_angle)
 // Function called when player triggers to fire
 trigger_pressed = function()
 {
-	// Checks if player has ammo and isnt reloading and is ranged
-	if (!player_is_reloading && player_curr_ammo > 0 && player_is_ranged)
+	// Checks if player has ammo and isnt reloading
+	if (!player_is_reloading && player_curr_ammo > 0)
 	{
 		// Checks if the fire cooldown has finished
 		if (player_fire_cooldown <= 0)
 		{
 			// Resets the fire cooldown
 			player_fire_cooldown = player_fire_rate;
+			// Reduces the ammo
+			player_curr_ammo--;
 			// Creates a projectile
 			create_projectile(gun_angle);
 		}
@@ -137,10 +137,7 @@ trigger_pressed = function()
 		// Stops the reloading sound
 		audio_stop_sound(reloading_sound);
 	}
-	else if (!player_is_ranged) {
-    	//melee swing code here
-    }
-    else
+	else
 	{
 		// Sets player to no longer reload
 		player_is_reloading = false;
