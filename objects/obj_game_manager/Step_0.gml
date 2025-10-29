@@ -67,6 +67,8 @@ if(curr_game_state == GAME_STATE.PLAYING)
 			start_time -= delta_time * 0.000001;	
 		}
 	}
+    
+    
 	
 	// Variables used for the camera postions set to half the rooms width and height
 	var _x_adjust = room_width / 2;
