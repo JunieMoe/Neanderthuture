@@ -130,8 +130,6 @@ trigger_pressed = function()
 		{
 			// Resets the fire cooldown
 			player_fire_cooldown = player_fire_rate;
-			// Reduces the ammo
-			player_curr_ammo--;
 			// Creates a projectile
 			create_projectile(gun_angle);
 		}
