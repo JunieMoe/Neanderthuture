@@ -3,7 +3,7 @@
   "%Name":"spr_hud_health_end",
   "bboxMode":0,
   "bbox_bottom":58,
-  "bbox_left":3,
+  "bbox_left":69,
   "bbox_right":141,
   "bbox_top":0,
   "collisionKind":1,
