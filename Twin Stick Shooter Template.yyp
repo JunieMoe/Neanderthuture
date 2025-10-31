@@ -2,13 +2,13 @@
   "$GMProject":"v1",
   "%Name":"Twin Stick Shooter Template",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -48,7 +48,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"Twin Stick Shooter Template",
   "resources":[
@@ -82,6 +82,7 @@
     {"id":{"name":"obj_joystick","path":"objects/obj_joystick/obj_joystick.yy",},},
     {"id":{"name":"obj_level_ground","path":"objects/obj_level_ground/obj_level_ground.yy",},},
     {"id":{"name":"obj_level_wall","path":"objects/obj_level_wall/obj_level_wall.yy",},},
+    {"id":{"name":"obj_melee_hitbox","path":"objects/obj_melee_hitbox/obj_melee_hitbox.yy",},},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},
     {"id":{"name":"obj_particle_handler","path":"objects/obj_particle_handler/obj_particle_handler.yy",},},
     {"id":{"name":"obj_player_shoot","path":"objects/obj_player_shoot/obj_player_shoot.yy",},},
@@ -163,6 +164,7 @@
     {"id":{"name":"spr_joystick_body_shoot","path":"sprites/spr_joystick_body_shoot/spr_joystick_body_shoot.yy",},},
     {"id":{"name":"spr_joystick_body","path":"sprites/spr_joystick_body/spr_joystick_body.yy",},},
     {"id":{"name":"spr_joystick_tap","path":"sprites/spr_joystick_tap/spr_joystick_tap.yy",},},
+    {"id":{"name":"spr_melee_hitbox","path":"sprites/spr_melee_hitbox/spr_melee_hitbox.yy",},},
     {"id":{"name":"spr_obstacle_1","path":"sprites/spr_obstacle_1/spr_obstacle_1.yy",},},
     {"id":{"name":"spr_obstacle_2","path":"sprites/spr_obstacle_2/spr_obstacle_2.yy",},},
     {"id":{"name":"spr_obstacle_3","path":"sprites/spr_obstacle_3/spr_obstacle_3.yy",},},
@@ -177,6 +179,7 @@
     {"id":{"name":"spr_splash","path":"sprites/spr_splash/spr_splash.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_vignette","path":"sprites/spr_vignette/spr_vignette.yy",},},
+    {"id":{"name":"Sprite60","path":"sprites/Sprite60/Sprite60.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

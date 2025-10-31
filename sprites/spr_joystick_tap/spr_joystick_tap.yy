@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_joystick_tap",
   "bboxMode":0,
   "bbox_bottom":139,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"75fb9ab7-89d3-49fc-847d-57dbdfc8f5b8","name":"75fb9ab7-89d3-49fc-847d-57dbdfc8f5b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75fb9ab7-89d3-49fc-847d-57dbdfc8f5b8","name":"75fb9ab7-89d3-49fc-847d-57dbdfc8f5b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

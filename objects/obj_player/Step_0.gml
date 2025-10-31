@@ -126,11 +126,22 @@ if (obj_game_manager.curr_game_state != GAME_STATE.PAUSED)
 				}
 	
 				// Checks for the space key or left mouse button
-				if (keyboard_check(vk_space) || mouse_check_button(mb_left))
+				if (mouse_check_button(mb_left))
 				{
 					// Calls trigger pressed function to fire
 					trigger_pressed();
 				}
+                
+                if (mouse_check_button_pressed(mb_right))
+                {
+                    melee_attack()
+                }
+                
+                if (player_melee_cooldown > 0)
+                {
+                    player_melee_cooldown -= 1 / room_speed;
+                }
+
 			}
 		}
 		else

@@ -20,6 +20,15 @@ player_reload_cooldown = 0;
 // Variable for reloading state
 player_is_reloading = false; 
 
+// Variable for storing cooldown counter
+player_melee_cooldown = 0;
+// seconds between attacks
+player_melee_rate = 0.6; 
+// how far the melee reaches
+player_melee_range = 80; 
+// damage dealt by melee
+player_melee_damage = 3; 
+
 // Variable for gamepad deadzone
 controller_deadzone = 0.1;
 // Variable for if player is mouse aiming
@@ -102,7 +111,7 @@ create_projectile = function(_gun_angle)
 	var _projectile_pos_y = y - _projectile_adjust_y;
 
 	// Creates new player projectile from the new positions
-	var _new_projectile = instance_create_layer(_projectile_pos_x, _projectile_pos_y, "Projectiles", obj_projectile);
+	var _new_projectile = instance_create_layer(_projectile_pos_x, _projectile_pos_y, "Enemies", obj_projectile);
 	_new_projectile.owner = self;	
 	_new_projectile.correct_player();
 	
@@ -167,4 +176,36 @@ trigger_pressed = function()
 		_new_empty_spark.set_angle(gun_angle);
 		_new_empty_spark.set_offset(true, _projectile_origin_x, _projectile_origin_y)
 	}
+}
+
+// Function for melee attack
+melee_attack = function()
+{
+    // Check cooldown
+    if (player_melee_cooldown <= 0)
+    {
+        player_melee_cooldown = player_melee_rate;
+
+        // Calculate attack position in front of player
+        var _theta = degtorad(gun_angle);
+        var _attack_x = x + lengthdir_x(player_melee_range, gun_angle);
+        var _attack_y = y + lengthdir_y(player_melee_range, gun_angle);
+
+        // Create a short-lived melee hitbox
+        var _hitbox = instance_create_layer(_attack_x, _attack_y, "Enemies", obj_melee_hitbox);
+        _hitbox.depth = -1000;
+        _hitbox.owner = self;
+        _hitbox.damage = player_melee_damage;
+        _hitbox.direction = gun_angle;
+
+
+        /* Visual/audio feedback
+        var _slash_fx = instance_create_depth(_attack_x, _attack_y, depth - 1, obj_particle_handler);
+        _slash_fx.set_player_slash();
+        _slash_fx.owner = self;
+        _slash_fx.set_angle(gun_angle);
+
+        audio_play_sound(snd_player_melee, 100, false);
+        */
+    }
 }
