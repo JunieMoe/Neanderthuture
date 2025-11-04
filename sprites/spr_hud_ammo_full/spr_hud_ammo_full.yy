@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"spr_hud_ammo_full",
   "bboxMode":0,
   "bbox_bottom":14,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"7c73b5b6-62ed-45aa-82de-f0aad8f6c2d0","name":"7c73b5b6-62ed-45aa-82de-f0aad8f6c2d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7c73b5b6-62ed-45aa-82de-f0aad8f6c2d0","name":"7c73b5b6-62ed-45aa-82de-f0aad8f6c2d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

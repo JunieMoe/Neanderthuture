@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"spr_player_gun_shadow",
   "bboxMode":0,
   "bbox_bottom":139,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"306ea89b-34fa-404d-a4a6-208c3959ef95","name":"306ea89b-34fa-404d-a4a6-208c3959ef95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"306ea89b-34fa-404d-a4a6-208c3959ef95","name":"306ea89b-34fa-404d-a4a6-208c3959ef95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

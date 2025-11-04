@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"spr_hud_health_end",
   "bboxMode":0,
   "bbox_bottom":58,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"422b8fa2-f27c-46d6-8bc4-cab6ce5d86b2","name":"422b8fa2-f27c-46d6-8bc4-cab6ce5d86b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"422b8fa2-f27c-46d6-8bc4-cab6ce5d86b2","name":"422b8fa2-f27c-46d6-8bc4-cab6ce5d86b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
