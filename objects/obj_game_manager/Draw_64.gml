@@ -5,93 +5,35 @@ if(curr_game_state == GAME_STATE.PLAYING)
 	with (obj_player)
 	{
 		// Draws the hud sprite in the top left corner
-		draw_sprite(spr_hud_background, 0, 0, 0);
+		// draw_sprite(spr_hud_background, 0, 0, 0);
 			
-		// Checks if the player health is above 0
-		if (player_health >= 1)
+		for (var _i = 0; _i < player_health; _i++)
 		{
-			// Draws the first health bar sprite at full strength
-			draw_sprite_ext(spr_hud_health, 0, 78, 40, 1.0, 1.0, 0, c_white, 1.0);	
-			
-			// Checks the players health is above 1
-			if (player_health >= 2)
+			if (_i <= 4)
 			{
-				// Draws the second health sprite at full strength
-				draw_sprite_ext(spr_hud_health, 0, 125, 40, 1.0, 1.0, 0, c_white, 1.0);
-				
-					if (player_health >= 3)
-					{
-						draw_sprite_ext(spr_hud_health, 0, 172, 40, 1.0, 1.0, 0, c_white, 1.0);
-						
-						if (player_health >= 4)
-						{
-							draw_sprite_ext(spr_hud_health, 0, 219, 40, 1.0, 1.0, 0, c_white, 1.0);
-							
-							if (player_health >= 5)
-							{
-								draw_sprite_ext(spr_hud_health, 0, 266, 40, 1.0, 1.0, 0, c_white, 1.0);
-								
-								if (player_health >= 6)
-								{
-									draw_sprite_ext(spr_hud_health, 0, 313, 40, 1.0, 1.0, 0, c_white, 1.0);
-									
-									if (player_health >= 7)
-									{
-										draw_sprite_ext(spr_hud_health, 0, 360, 40, 1.0, 1.0, 0, c_white, 1.0);
-										
-										if (player_health >= 8)
-										{
-											draw_sprite_ext(spr_hud_health, 0, 407, 40, 1.0, 1.0, 0, c_white, 1.0);
-											
-											if (player_health >= 9)
-											{
-												draw_sprite_ext(spr_hud_health, 0, 454, 40, 1.0, 1.0, 0, c_white, 1.0);
-													}
-						}
-					}
-			}
-		}
-	}
-}
-				// Checks the players health is above 9
-				if (player_health >= 10)
-				{
-					// Draws the 10th health sprite at full strength
-					draw_sprite_ext(spr_hud_health_end, 0, 432, 40, 1.0, 1.0, 0, c_white, 1.0);
-				}
-				else
-				{
-					// Draws the third health sprite at fade out alpha
-					draw_sprite_ext(spr_hud_health_end, 0, 385, 40, 1.0, 1.0, 0, c_white, hud_health_alpha);
-				}
+				draw_sprite_ext(spr_hud_health, 0, 50 + (_i * 75), 45, 0.8, 0.8, 0, c_white, 1.0);
 			}
 			else
 			{
-				// Draws the second health sprite at fade out alpha
-				draw_sprite_ext(spr_hud_health, 0, 237, 40, 1.0, 1.0, 0, c_white, hud_health_alpha);	
+				draw_sprite_ext(spr_hud_health, 0, 50 + ((_i - 5) * 75), 120, 0.8, 0.8, 0, c_white, 1.0);
 			}
 		}
-		else
-		{
-			// Draws the first health bar sprite at fade out alpha
-			draw_sprite_ext(spr_hud_health, 0, 86, 40, 1.0, 1.0, 0, c_white, hud_health_alpha);	
-		}
-
-		// Loops through the current ammo count
-		for (var _i = 0; _i < player_curr_ammo; _i++)
-		{
-			// Checks if its the first ammo
-			if (_i == 0)
-			{
-				// Draws the starting ammo sprite
-				draw_sprite(spr_hud_ammo_start, 0, 58, 85);
-			}
-			else
-			{
-				// Draws the remaining ammo sprites at offset based on the loops count
-				draw_sprite(spr_hud_ammo, 0, 53 + (_i) * 11, 85);
-			}
-		}
+		
+		//// Loops through the current ammo count
+		//for (var _i = 0; _i < player_curr_ammo; _i++)
+		//{
+		//	// Checks if its the first ammo
+		//	if (_i == 0)
+		//	{
+		//		// Draws the starting ammo sprite
+		//		draw_sprite(spr_hud_ammo_start, 0, 58, 85);
+		//	}
+		//	else
+		//	{
+		//		// Draws the remaining ammo sprites at offset based on the loops count
+		//		draw_sprite(spr_hud_ammo, 0, 53 + (_i) * 11, 85);
+		//	}
+		//}
 		
 		
 		// Returns the draw options to defaults
