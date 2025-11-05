@@ -282,7 +282,7 @@ if (obj_game_manager.curr_game_state != GAME_STATE.PAUSED)
 		// Lerps the body angle to the new direction
 		body_angle = lerp(body_angle, direction, rotation_speed * 0.5);
 		// Sets the image angle to the body angle
-		image_angle = body_angle;
+		//image_angle = body_angle;
 		
 		// Checks if the player is reloading
 		if (player_is_reloading)

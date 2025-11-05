@@ -1,4 +1,4 @@
-// States used for storing the game playing state
+ // States used for storing the game playing state
 enum GAME_STATE
 {
 	PLAYING,
