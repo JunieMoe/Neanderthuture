@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Twin Stick Shooter Template",
   "AudioGroups":[
-    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -48,7 +48,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Twin Stick Shooter Template",
   "resources":[
@@ -177,6 +177,7 @@
     {"id":{"name":"spr_reload_button","path":"sprites/spr_reload_button/spr_reload_button.yy",},},
     {"id":{"name":"spr_sound","path":"sprites/spr_sound/spr_sound.yy",},},
     {"id":{"name":"spr_splash","path":"sprites/spr_splash/spr_splash.yy",},},
+    {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_vignette","path":"sprites/spr_vignette/spr_vignette.yy",},},
     {"id":{"name":"Sprite60","path":"sprites/Sprite60/Sprite60.yy",},},
   ],
